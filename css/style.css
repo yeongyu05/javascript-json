@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: sans-serif;
+}
+
+.hidden {
+    overflow-y: hidden;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+#root {
+    background: #ddd;
+}
+
+header {
+    height: 100px;
+    background: #ccc;
+}
+
+main {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+main > h1 {
+    text-transform: uppercase;
+}
+
+main > .container {
+    grid-template-columns: repeat(5, 280px);
+    gap: 10px;
+}
+
+main > .container > .post {
+    width: 280px;
+}
+
+main > .container > .post > .thumbnail {
+    height: 100px;
+    background: #eee;
+}
+
+main > .container > .post > .contentWrap {
+    padding: 5px;
+    background: #fff;
+}
+
+main > .container > .post > .contentWrap > .preview {
+    height: 100px;
+}
+
+main > .container > .post > .contentWrap > .preview > .title {
+    padding: 5px 0;
+}
+
+main > .container > .post > .contentWrap > .preview > .contents {
+    height: 65px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+main > .container > .post > .contentWrap > .info {
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px 0;
+    border-top: 1px solid #aaa;
+}
+
+.modal {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.modal > .popup {
+    width: 720px;
+    height: 360px;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+}
+
+.modal > .popup > .thumbnail {
+    height: calc(100% / 2);
+    background: #eee;
+}
+
+.modal > .popup > .contentWrap {
+    height: calc(100% / 2);
+}
+
+.modal > .popup > .contentWrap > .preview {
+    height: 140px;
+    padding: 10px 0;
+}
+
+.modal > .popup > .contentWrap > .preview > .contents {
+    word-wrap: break-word;
+}
+
+.modal > .popup > .contentWrap > .preview > .contents::selection {
+    background: #eee;
+}
+
+.modal > .popup > .contentWrap > .preview > .category > span {
+    display: inline-block;
+    color: #fff;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.modal > .popup > .contentWrap > .info {
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
