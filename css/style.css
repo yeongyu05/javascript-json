@@ -138,3 +138,14 @@ main > .container > .post > .contentWrap > .info {
     justify-content: space-between;
     height: 30px;
 }
+
+.modal > .popup > .contentWrap > div > .category > input {
+    margin-left: 10px;
+}
+
+.modal > .popup > .contentWrap > div > .category > span {
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 5px;
+    margin-left: 10px;;
+}
